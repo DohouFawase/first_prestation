@@ -31,98 +31,108 @@
          <img src="/src/assets/Icon/Icon - Linkedin.png" class="w-8 h-8 md:w-10 md:h-10" alt="LinkedIn">
          <img src="/src/assets/Icon/Icon - X Twitter.png" class="w-8 h-8 md:w-10 md:h-10" alt="Twitter">
      </div>
-     <div class="flex justify-center">
-        <img src="/src/assets/images/Logo.svg" class="object-container    w-full mx-auto md:w-full  md:h-64" alt="Logo Rev">
+     <div class="md:flex  hidden justify-center">
+        <img src="/src/assets/images/Logo.svg" class="object-container    w-64 mx-auto md:w-full  md:h-64" alt="Logo Rev">
     </div>
      <!-- Image de profil -->
-     <div class="flex flex-col items-center gap-2">
+     <div class="flex flex-col items-center relative">
         <!-- Image de profil -->
-        <img src="/src/assets/images/img.jpg" 
-             class="h-14 w-14 md:h-18 md:w-18 shadow-2xl rounded-full object-cover border-4 border-[#54acae]" 
-             alt="Profile">
+        <div class="relative z-20">
+          <img src="/src/assets/images/img.jpg" 
+               class="h-14 w-14 md:h-18 md:w-18 shadow-2xl rounded-full object-cover border-4 border-gray-300" 
+               alt="Profile">
+        </div>
       
-        <!-- Bouton "Mon compte" -->
-        <a href="/login.html" 
-           class="bg-[#58abaf] text-white font-bold px-6 py-2 rounded-full shadow-md text-sm md:text-base hover:bg-[#499fa3] transition duration-300">
+        <!-- Bouton "Mon compte" juste en dessous -->
+        <a href="/login.html"
+           class="md:-mt-3 z-10 bg-[#58abaf] w-34 text-center text-white font-bold px-6 py-2 md:w-full rounded-full shadow-2xl text-[11px] md:text-base hover:bg-[#499fa3] transition duration-300">
            Mon compte
         </a>
       </div>
       
+      
 
      
 
- </div>
+ 
+    </div>
 
   <!-- Logo -->
- 
+   <div class="md:hidden   justify-center">
+        <img src="/src/assets/images/Logo.svg" class="object-container    w-auto  mx-auto md:h-64" alt="Logo Rev">
+    </div>
  </div>
 
 
 
     <div class="  mx-2 md:mx-14 lg:mx-24 space-y-14">
-        <div class="space-y-8">
+        <div class="space-y-4">
             <h1 class="font-medium text-6xl tracking-tight  text-[#772D80]">Hey <span
                     class="text-[#998dbe]">Prénom</span>, Quoi de neuf ?</h1>
-                    <div class="grid grid-cols-1 md:mx-4  md:grid-cols-2 md:bg-white p-5 gap-4 md:space-x-9 md:shadow-xl rounded-4xl">
-                        <!-- Première carte -->
-                        <div>
-                            <div class="bg-[#e5f1f2] md:px-4 md:py-1 shadow-md overflow-hidden rounded-2xl space-y-2">
-                                <div class="p-1 md:rounded-xl flex items-center justify-between 
+            <div
+                class="grid grid-cols-1 md:mx-4  md:grid-cols-2 md:bg-white p-5 gap-4 md:space-x-9 md:shadow-xl rounded-4xl">
+                <!-- Première carte -->
+                <div>
+                    <div class="bg-[#e5f1f2] md:px-4 md:py-1 shadow-md overflow-hidden rounded-2xl space-y-2">
+                        <div class="p-1 md:rounded-xl flex items-center justify-between 
                                         bg-[#9dcdd0] md:bg-transparent ">
-                                    <p class="text-white md:text-[#9dcdd0] font-bold text-sm md:text-xl text-center w-full">
-                                        Depuis le début de votre abonnement</p>
-                                    <span class="md:hidden text-white text-xl flex-shrink-0">▼</span>
-                                </div>
-                                <ul class="flex flex-col space-y-1 md:p-0 p-4">
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">83</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Actualités consultées</p>
-                                    </li>
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">6</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Idées générées et téléchargées</p>
-                                    </li>
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">25</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Rapports sectoriels téléchargés</p>
-                                    </li>
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">2</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Rapports sectoriels téléchargés</p>
-                                    </li>
-                                </ul>
-                            </div>
+                            <p class="text-white md:text-[#9dcdd0] font-bold text-sm md:text-xl text-center w-full">
+                                Depuis le début de votre abonnement</p>
+                                <span class="md:hidden text-white text-xl flex-shrink-0"><i class="fas fa-chevron-down text-[#9dcdd0] text-base p-1  bg-white rounded-full "></i></span>
+                                
                         </div>
-        
-                        <!-- Deuxième carte -->
-                        <div>
-                            <div class="bg-[#edeaf4] shadow-md md:px-4 md:py-1 overflow-hidden rounded-2xl space-y-2">
-                                <div class="bg-[#8475b5] md:bg-transparent p-1 md:rounded-xl flex items-center justify-between">
-                                    <p class="text-white md:rounded-xl md:text-[#8475b5] font-bold text-sm md:text-xl text-center w-full">
-                                        Depuis le début de votre abonnement</p>
-                                    <span class="md:hidden text-white text-xl flex-shrink-0">▼</span>
-                                </div>
-                                <ul class="flex flex-col space-y-1 md:p-0 p-4">
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#8475b5] text-sm rounded-md">8</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Nouveautés RSE disponibles</p>
-                                    </li>
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#8475b5]  text-sm rounded-md">5</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Opportunités d'idées disponibles</p>
-                                    </li>
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#8475b5]  text-sm rounded-md">9</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Rapports sectoriels récents</p>
-                                    </li>
-                                    <li class="flex items-center gap-x-2">
-                                        <div class="bg-white p-1 text-[#8475b5]  text-sm rounded-md">1</div>
-                                        <p class="text-sm md:text-lg whitespace-nowrap">Événements ou sessions manqués</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="flex flex-col space-y-1 md:p-0 p-4">
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">83</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Actualités consultées</p>
+                            </li>
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">6</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Idées générées et téléchargées</p>
+                            </li>
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">25</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Rapports sectoriels téléchargés</p>
+                            </li>
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#9dcdd0] text-sm rounded-md">2</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Rapports sectoriels téléchargés</p>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+
+                <!-- Deuxième carte -->
+                <div>
+                    <div class="bg-[#edeaf4] shadow-md md:px-4 md:py-1 overflow-hidden rounded-2xl space-y-2">
+                        <div class="bg-[#8475b5] md:bg-transparent p-1 md:rounded-xl flex items-center justify-between">
+                            <p
+                                class="text-white md:rounded-xl md:text-[#8475b5] font-bold text-sm md:text-xl text-center w-full">
+                                Depuis le début de votre abonnement</p>
+                                <span class="md:hidden text-white text-xl flex-shrink-0"><i class="fas fa-chevron-down text-[#8475b5] text-base p-1  bg-white rounded-full "></i></span>
+                            
+                        </div>
+                        <ul class="flex flex-col space-y-1 md:p-0 p-4">
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#8475b5] text-sm rounded-md">8</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Nouveautés RSE disponibles</p>
+                            </li>
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#8475b5]  text-sm rounded-md">5</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Opportunités d'idées disponibles</p>
+                            </li>
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#8475b5]  text-sm rounded-md">9</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Rapports sectoriels récents</p>
+                            </li>
+                            <li class="flex items-center gap-x-2">
+                                <div class="bg-white p-1 text-[#8475b5]  text-sm rounded-md">1</div>
+                                <p class="text-sm md:text-lg whitespace-nowrap">Événements ou sessions manqués</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -130,42 +140,42 @@
 
 
 
-        <div class="shadow-2xl bg-white rounded-4xl overflow-hidden   ">
+        <div class="shadow-2xl bg-white rounded-4xl overflow-hidden bg-gray-200  ">
 
 
-            <div class="w-full bg-gray-200">
+            <div class="w-full bg-gray-200 ">
 
                 <div class="flex justify-between w-full overflow-hidden">
                     <!-- Onglet 1 -->
                     <a href="/index.html"
-                        class="tab-button w-full  active-tab hover:bg-gray-300 flex gap-2 items-center transition duration-300 p-2">
+                        class="tab-button w-full hover:bg-gray-300 flex gap-2 items-center shadow-md md:p-2 transition duration-300 border-r border-gray-300">
                         <img src="src/assets/Icon/Tendances RSE- Green.png" class="w-12 h-12" alt="">
-                        <p class="md:text-xl text-xs md:block font-medium whitespace-nowrap">Tendances RSE</p>
+                        <h1 class="md:text-xl  text-xs md:block font-medium">Tendances RSE</h1>
                         <div
-                            class="absolute inline-flex md:top-[39rem] top-[49rem]    md:left-[17rem] lg:top-[38rem] ] lg:left-[26rem] left-[7rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
+                            class="absolute inline-flex md:top-[39rem] top-[56rem]    md:left-[17rem] lg:top-[38rem] ] lg:left-[26rem] left-[7rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
                             +20</div>
                     </a>
-            
+
                     <!-- Onglet 2 -->
                     <a href="/commercial.html"
-                        class="tab-button w-full active-tab flex gap-2 items-center p-2 hover:bg-gray-300 transition duration-300">
+                        class="tab-button w-full shadow-md flex border-r  border-l border-gray-300 items-center md:p-2 hover:bg-gray-300 transition duration-300">
                         <img src="src/assets/Icon/Idées commerciales - Purple.png" class="w-12 h-12" alt="">
-                        <p class="md:text-xl hidden md:block font-medium">Idées Commerciales</p>
+                        <h1 class="md:text-xl hidden text-[#998dbe]  md:block font-medium">Idées Commerciales</h1>
                         <div
-                            class="absolute inline-flex md:top-[39rem]   md:left-[32rem] top-[49rem] lg:top-[38rem] lg:left-[49rem] left-[16rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
+                            class="absolute inline-flex md:top-[39rem]   md:left-[32rem] top-[56rem] lg:top-[38rem] lg:left-[49rem] left-[14rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
                             +20</div>
                     </a>
-            
+
                     <!-- Onglet 3 -->
                     <a href="/profil.html"
-                        class="tab-button w-full flex gap-2 items-center p-2 hover:bg-gray-300 transition duration-300">
+                        class="tab-button w-full  flex gap-2 items-center p-2 hover:bg-gray-300 transition duration-300">
                         <img src="src/assets/Icon/Profil - Green.png" class="w-12 h-12" alt="">
-                        <p class="text-xl md:block hidden font-medium">Compléter le Profil</p>
+                        <h1 class="text-xl text-[#998dbe]  md:block hidden font-medium">Compléter le Profil</h1>
                     </a>
                 </div>
-            
+
             </div>
-                
+
 
 
 
@@ -175,17 +185,19 @@
 
 
             <div class="md:px-12 py-6 px-4 ">
-   <p class="bg-[#772D80] arrow mt-4 mx-4 shadow-md md:w-[40rem] text-white p-2 rounded-2xl md:rounded-full px-3 shadow-md">
+                <h1
+                    class="bg-[#772D80] arrow mt-4 mx-4 shadow-md md:w-[34rem] text-white p-2 rounded-2xl md:rounded-full px-3 shadow-md">
                     Vous avez 8 nouveautés RSE disponibles depuis votre dernière connexion
-                </p>
+            </h1>
                 <div class="my-6 flex flex-col space-y-4 md:flex-row justify-center md:justify-between w-full">
 
                     <!-- Search Input Section -->
                     <div class="relative w-full md:w-[350px]">
                         <input type="text" class="px-9 py-2 rounded-full shadow-md w-full" placeholder="Recherche...">
-                        <img src="/src/assets/images/search.png" class="w-5 h-5 absolute top-1/2 left-3 transform -translate-y-1/2" alt="">
+                        <img src="/src/assets/images/search.png"
+                            class="w-5 h-5 absolute top-1/2 left-3 transform -translate-y-1/2" alt="">
                     </div>
-                
+
 
                     <!-- Button Section -->
                     <div class="flex justify-between gap-2 space-x-9">
@@ -200,14 +212,14 @@
                         </div>
 
                         <!-- Notifications Button -->
-                         <div class="w-full ">
+                        <div class="w-full ">
 
-                             <button
-                                 class="bg-[#58abaf] flex items-center gap-x-2 text-white font-bold px-3 py-2 rounded-full shadow-md text-xs ">
-                                 <img src="/src/assets/images/notif.png" alt="" class="w-6 h-6">
-                                 Mes alertes
-                             </button>
-                         </div>
+                            <button
+                                class="bg-[#58abaf] flex items-center gap-x-2 text-white font-bold px-3 py-2 rounded-full shadow-md text-xs ">
+                                <img src="/src/assets/images/notif.png" alt="" class="w-6 h-6">
+                               <h1> Mes alertes</h1>
+                            </button>
+                        </div>
                     </div>
                 </div>
 
@@ -217,10 +229,10 @@
                     <div class="p-4">
                         <button id="closeSidebar" class="absolute top-2 right-2 text-xl font-bold">X</button>
                         <!-- Button de fermeture -->
-                        <p class="text-center">Filtres</p>
+                        <p class="text-center text-[#820081] ">Filtres</p>
                         <div class="space-y-3 px-3 py-3">
                             <div class="space-y-2">
-                                <h1>Categorie</h1>
+                                <h1 class="text-[#4c008c]">Categorie</h1>
                                 <ul class="space-y-2">
                                     <li class="flex items-center gap-2">
                                         <input type="radio" id="radio1" name="categorie" class="peer hidden">
@@ -298,14 +310,14 @@
 
 
                 <div class="flex gap-x-14 w-full">
-                    <div class="rounded-[3rem] md:flex hidden shadow-2xl w-64 h-[44rem]">
+                    <div class="rounded-[2rem] md:flex hidden shadow-2xl w-64 h-[44rem]">
                         <div id="sidebar" class="dividy-y-1 ">
-                            <div class="p-4 ">
-                                <p class="text-center">Filtes</p>
+                            <div class=" py-3 border-b border-gray-400 ">
+                                <h1 class="text-center text-[#820081] ">Filtres</h1>
                             </div>
                             <div class="space-y-3 px-3 py-3">
                                 <div class="space-y-2">
-                                    <h1>Categorie</h1>
+                                    <h1 class="text-[#4c008c]">Categorie</h1>
                                     <ul class="space-y-2">
                                         <li class="flex items-center gap-2">
                                             <input type="radio" id="radio1" name="categorie" class="peer hidden">
@@ -342,7 +354,7 @@
                                 </div>
 
                                 <div class="space-y-2">
-                                    <h1>Favories</h1>
+                                    <h1 class="text-[#4c008c]">Favories</h1>
                                     <ul class="space-y-2">
                                         <li class="flex items-center gap-2">
                                             <input type="radio" id="fav1" name="favoris" class="peer hidden">
@@ -355,7 +367,7 @@
                                 </div>
 
                                 <div class="space-y-2">
-                                    <h1>Périodes</h1>
+                                    <h1 class="text-[#4c008c]">Périodes</h1>
                                     <ul class="space-y-2">
                                         <li class="flex items-center gap-2">
                                             <input type="radio" id="per1" name="periode" class="peer hidden">
@@ -380,7 +392,7 @@
 
                                 <!-- Priorité haute -->
                                 <div class="space-y-2">
-                                    <h1>Priorité</h1>
+                                    <h1 class="text-[#4c008c]">Priorité</h1>
                                     <ul class="space-y-2">
                                         <li class="flex items-center gap-2">
                                             <input type="radio" id="prio1" name="priorite" class="peer hidden">
@@ -399,7 +411,7 @@
 
                                 <!-- Impact commercial -->
                                 <div class="space-y-2 relative">
-                                    <h1>Impact commercial</h1>
+                                    <h1 class="text-[#4c008c]">Impact commercial</h1>
                                     <ul class="space-y-2">
                                         <li class="flex items-center gap-2">
                                             <input type="radio" id="impact1" name="impact" class="peer hidden">
@@ -416,148 +428,149 @@
 
                                     </ul>
 
-                                <div class="mt-10 mx-auto ml-10 ">
-                                    <a href="" class="bg-[#8f59b7]  text-center text-white rounded-full p-2 px-2 shadow-md">Appliquer</a>
+                                    <div class="mt-10 mx-auto ml-10 ">
+                                        <a href=""
+                                            class="bg-[#8f59b7]  text-center text-white likn   rounded-full p-1 px-4 shadow-2xl">Appliquer</a>
+                                    </div>
                                 </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="  w-full grid md:grid-cols-2 gap-16 gap-4">
+                            <div class="bg-[#e5f1f2]  rounded-2xl overflow-hidden  flex flex-col justify-between">
+                                <div class="flex gap-x-2 justify-end mr-4 py-3">
+                                    <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
+                                </div>
+
+                                <div class="flex justify-center py-5 flex-col items-center space-y-2">
+                                    <h1 class="font-bold text-4xl text-[#58abaf]">Titre du Rapport</h1>
+                                    <img src="/src/assets/images/book.png" class="h-12 w-12" alt="">
+
+                                </div>
+
+                                <div class="bg-[#58abaf] py-1 text-white text-center flex justify-center items-center">
+                                    <a href="#" class="text-2xl ">Lire le Rapport</a>
+                                    <i class="fa-solid fa-chevron-right text-3xl"></i>
+
+                                </div>
+                            </div>
+
+                            <div class="bg-[#efe7f4]  rounded-2xl overflow-hidden  flex flex-col justify-between">
+                                <div class="flex gap-x-2 justify-end mr-4 py-3">
+                                    <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
+                                </div>
+
+                                <div class="flex justify-center flex-col items-center space-y-2 py-5">
+                                    <h1 class="font-bold text-[#8f59b7] text-4xl">Titre L'article</h1>
+                                    <img src="/src/assets/images/article.png" class="h-12 w-12" alt="">
+
+                                </div>
+
+                                <div class="bg-[#8f59b7]  py-1 text-white flex justify-center items-center text-center">
+                                    <a href="#" class="text-2xl ">Lire l'article</a>
+                                    <i class="fa-solid fa-chevron-right text-3xl"></i>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#efe7f4]  rounded-2xl overflow-hidden  flex flex-col justify-between">
+                                <div class="flex gap-x-2 justify-end mr-4 py-3">
+                                    <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
+                                </div>
+
+                                <div class="flex justify-center flex-col items-center space-y-2 py-5">
+                                    <h1 class="font-bold text-4xl text-[#8f59b7]">Titre de l'etude</h1>
+                                    <img src="/src/assets/images/stach.png" class="h-12 w-12" alt="">
+
+                                </div>
+
+                                <div class="bg-[#8f59b7] flex justify-center items-center  py-1 text-white text-center">
+                                    <a href="#" class="text-2xl ">Lire l'etude</a>
+                                    <i class="fa-solid fa-chevron-right text-3xl"></i>
+
+                                </div>
+                            </div>
+
+                            <div class="bg-[#e5f1f2]  rounded-2xl overflow-hidden  flex flex-col justify-between">
+                                <div class="flex gap-x-2 justify-end mr-4 py-3">
+                                    <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
+                                </div>
+
+                                <div class="flex justify-center flex-col items-center space-y-2 py-5">
+                                    <h1 class="font-bold text-4xl text-[#58abaf]">Titre du Blog</h1>
+                                    <img src="/src/assets/images/blog.png" class="h-12 w-12" alt="">
+
+                                </div>
+
+                                <div class="bg-[#58abaf] py-1  flex justify-center items-center text-white text-center">
+                                    <a href="#" class="text-2xl ">Lire le Blog</a>
+                                    <i class="fa-solid fa-chevron-right text-3xl"></i>
+
                                 </div>
                             </div>
 
 
+                            <div class="bg-[#e5f1f2]  rounded-2xl overflow-hidden  flex flex-col justify-between">
+                                <div class="flex gap-x-2 justify-end mr-4 py-3">
+                                    <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
+                                </div>
+
+                                <div class="flex justify-center flex-col items-center space-y-2 py-5">
+                                    <h1 class="font-bold text-4xl text-[#58abaf]">Titre de la loi</h1>
+                                    <img src="/src/assets/images/law.png" class="h-12 w-12" alt="">
+
+                                </div>
+
+                                <div class="bg-[#58abaf] py-1 flex justify-center items-center text-white text-center">
+                                    <a href="#" class="text-2xl font-medium">Lire le loi</a>
+                                    <i class="fa-solid fa-chevron-right text-3xl"></i>
+
+                                </div>
+                            </div>
+
+                            <div class="bg-[#efe7f4]  rounded-2xl overflow-hidden  flex flex-col justify-between">
+                                <div class="flex gap-x-2 justify-end mr-4 py-3">
+                                    <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
+                                    <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
+                                </div>
+
+                                <div class="flex justify-center flex-col items-center space-y-2 py-5">
+                                    <h1 class="font-bold text-4xl text-[#8f59b7]">Titre du Rapport</h1>
+                                    <img src="/src/assets/images/book.png" class="h-12 w-12" alt="">
+
+                                </div>
+
+                                <div class="bg-[#8f59b7] flex justify-center items-center py-1 text-white text-center">
+                                    <a href="#" class="text-2xl font-medium">Lire le Rapport</a>
+                                    <i class="fa-solid fa-chevron-right text-3xl"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center gap-x-2 items-center ">
+                            <button class="h-8 mt-1 w-8 rounded-full bg-[#772D80] text-white">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="h-8 mt-1 w-8 rounded-full bg-[#772D80] text-white">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
                         </div>
                     </div>
-
-                   <div class="w-full">
-                    <div class="  w-full grid md:grid-cols-2 gap-16 gap-4">
-                        <div class="bg-[#e5f1f2]  rounded-2xl overflow-hidden  flex flex-col justify-between">
-                            <div class="flex gap-x-2 justify-end mr-4 py-3">
-                                <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
-                            </div>
-
-                            <div class="flex justify-center py-5 flex-col items-center space-y-2">
-                                <h1 class="font-bold text-4xl text-[#58abaf]">Titre du Rapport</h1>
-                                <img src="/src/assets/images/book.png" class="h-12 w-12" alt="">
-
-                            </div>
-
-                            <div class="bg-[#58abaf] py-1 text-white text-center flex justify-center items-center">
-                                <a href="#" class="text-2xl ">Lire le Rapport</a>
-                            <i class="fa-solid fa-chevron-right text-3xl"></i> 
-
-                            </div>
-                        </div>
-
-                        <div class="bg-[#efe7f4]  rounded-2xl overflow-hidden  flex flex-col justify-between">
-                            <div class="flex gap-x-2 justify-end mr-4 py-3">
-                                <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
-                            </div>
-
-                            <div class="flex justify-center flex-col items-center space-y-2 py-5">
-                                <h1 class="font-bold text-[#8f59b7] text-4xl">Titre L'article</h1>
-                                <img src="/src/assets/images/article.png" class="h-12 w-12" alt="">
-
-                            </div>
-
-                            <div class="bg-[#8f59b7]  py-1 text-white flex justify-center items-center text-center">
-                                <a href="#" class="text-2xl ">Lire l'article</a>
-                                <i class="fa-solid fa-chevron-right text-3xl"></i> 
-                            </div>
-                        </div>
-
-                        <div class="bg-[#efe7f4]  rounded-2xl overflow-hidden  flex flex-col justify-between">
-                            <div class="flex gap-x-2 justify-end mr-4 py-3">
-                                <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
-                            </div>
-
-                            <div class="flex justify-center flex-col items-center space-y-2 py-5">
-                                <h1 class="font-bold text-4xl text-[#8f59b7]">Titre de l'etude</h1>
-                                <img src="/src/assets/images/stach.png" class="h-12 w-12" alt="">
-
-                            </div>
-
-                            <div class="bg-[#8f59b7] flex justify-center items-center  py-1 text-white text-center">
-                                <a href="#" class="text-2xl ">Lire l'etude</a>
-                                <i class="fa-solid fa-chevron-right text-3xl"></i> 
-
-                            </div>
-                        </div>
-
-                        <div class="bg-[#e5f1f2]  rounded-2xl overflow-hidden  flex flex-col justify-between">
-                            <div class="flex gap-x-2 justify-end mr-4 py-3">
-                                <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
-                            </div>
-
-                            <div class="flex justify-center flex-col items-center space-y-2 py-5">
-                                <h1 class="font-bold text-4xl text-[#58abaf]">Titre du Blog</h1>
-                                <img src="/src/assets/images/blog.png" class="h-12 w-12" alt="">
-
-                            </div>
-
-                            <div class="bg-[#58abaf] py-1  flex justify-center items-center text-white text-center">
-                                <a href="#" class="text-2xl ">Lire le Blog</a>
-                                <i class="fa-solid fa-chevron-right text-3xl"></i> 
-
-                            </div>
-                        </div>
-
-
-                        <div class="bg-[#e5f1f2]  rounded-2xl overflow-hidden  flex flex-col justify-between">
-                            <div class="flex gap-x-2 justify-end mr-4 py-3">
-                                <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
-                            </div>
-
-                            <div class="flex justify-center flex-col items-center space-y-2 py-5">
-                                <h1 class="font-bold text-4xl text-[#58abaf]">Titre de la loi</h1>
-                                <img src="/src/assets/images/law.png" class="h-12 w-12" alt="">
-
-                            </div>
-
-                            <div class="bg-[#58abaf] py-1 flex justify-center items-center text-white text-center">
-                                <a href="#" class="text-2xl font-medium">Lire le loi</a>
-                                <i class="fa-solid fa-chevron-right text-3xl"></i> 
-
-                            </div>
-                        </div>
-
-                        <div class="bg-[#efe7f4]  rounded-2xl overflow-hidden  flex flex-col justify-between">
-                            <div class="flex gap-x-2 justify-end mr-4 py-3">
-                                <img src="/src/assets/Icon/Partage.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Cloche.png" alt="" class="w-7 h-7 object-cover">
-                                <img src="/src/assets/Icon/Favoris.png" alt="" class="w-7 h-7 object-cover">
-                            </div>
-
-                            <div class="flex justify-center flex-col items-center space-y-2 py-5">
-                                <h1 class="font-bold text-4xl text-[#8f59b7]">Titre du Rapport</h1>
-                                <img src="/src/assets/images/book.png" class="h-12 w-12" alt="">
-
-                            </div>
-
-                            <div class="bg-[#8f59b7] flex justify-center items-center py-1 text-white text-center">
-                                <a href="#" class="text-2xl font-medium">Lire le Rapport</a>
-                                <i class="fa-solid fa-chevron-right text-3xl"></i> 
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex justify-center gap-x-2 items-center ">
-                        <button class="h-8 mt-1 w-8 rounded-full bg-[#772D80] text-white">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-                        <button class="h-8 mt-1 w-8 rounded-full bg-[#772D80] text-white">
-                            <i class="fa-solid fa-chevron-right"></i> 
-                        </button>
-                    </div>
-                   </div>
                 </div>
             </div>
         </div>
@@ -568,47 +581,36 @@
         <!-- Ecureuil Animation -->
         <img src="/src/assets/Icon/Ecureuil.png"
             class="w-24 h-24 animate-bounce absolute right-10 -top-16 lg:right-20 lg:bottom-44 object-cover" alt="">
-    
-        <div class="px-4 md:px-10 bg-[#e1e5be] pt-5 ">
 
+      <div class="px-4 md:px-10 bg-[#e6e8d3] shadow-lg pt-4 ">
+    <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-6 lg:space-y-0">
+        <div class="flex justify-center lg:justify-start">
+            <img src="/src/assets/images/Logo.svg" class="object-contain h-32 md:h-44" alt="Logo Rev">
+        </div>
 
-            
-            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-6 lg:space-y-0">
-    
-                <!-- Logo Section -->
+        <div class="text-center lg:text-left">
+            <ul class="space-y-3">
+                <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Conditions générales d'utilisation</a></li>
+                <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Politique de confidentialité</a></li>
+                <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Support clients</a></li>
+            </ul>
+        </div>
 
-                 
-                <div class="flex justify-center lg:justify-start">
-                    <img src="/src/assets/images/Logo.svg" class="object-contain h-32 md:h-44" alt="Logo Rev">
-                </div>
-    
-                <!-- Links Section -->
-                <div class="text-center lg:text-left">
-                    <ul class="space-y-3">
-                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Conditions générales d'utilisation</a></li>
-                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Politique de confidentialité</a></li>
-                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Support clients</a></li>
-                    </ul>
-                </div>
-    
-                <!-- Contact Section -->
-                <div class="text-center lg:text-right">
-                    <a href="#"
-                        class="bg-[#8f59b7] flex gap-2 items-center px-6 py-2 rounded-4xl text-white mx-auto lg:mx-0">
-                        Contactez-nous
-                    </a>
-    
-                    <div class="flex justify-center lg:justify-start gap-x-2 mt-4 lg:mt-0">
-                        <img src="/src/assets/Icon/Icon - Facebook.png" class="w-12 h-12" alt="Facebook">
-                        <img src="/src/assets/Icon/Icon - Linkedin.png" class="w-12 h-12" alt="LinkedIn">
-                        <img src="/src/assets/Icon/Icon - X Twitter.png" class="w-12 h-12" alt="Twitter">
-                    </div>
-                </div>
-    
+        <div class="text-center lg:text-right">
+            <a href="#"
+                class="bg-[#8f59b7] flex gap-2 items-center px-6 py-2 rounded-4xl text-white mx-auto lg:mx-0">
+                Contactez-nous
+            </a>
+
+            <div class="flex justify-center gap-x-2 mt-4 lg:mt-0"> <img src="/src/assets/Icon/Icon - Facebook.png" class="w-12 h-12" alt="Facebook">
+                <img src="/src/assets/Icon/Icon - Linkedin.png" class="w-12 h-12" alt="LinkedIn">
+                <img src="/src/assets/Icon/Icon - X Twitter.png" class="w-12 h-12" alt="Twitter">
             </div>
         </div>
+    </div>
+</div>
     </footer>
-    
+
     <script src="/src/assets/js/script.js"></script>
 
     <script>

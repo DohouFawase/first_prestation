@@ -3,12 +3,12 @@
   const links = document.querySelectorAll('.tab-button');
 
   links.forEach(link => {
-      if (link.href.includes(currentUrl)) {
+      if (link.getAttribute('href') === '/index.html') {
+          link.classList.add('active-link');
+      } else if (link.href.includes(currentUrl) && currentUrl !== '/index.html') {
           link.classList.add('active-link');
       }
   });
-
-
 
 
 

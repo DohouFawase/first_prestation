@@ -31,35 +31,40 @@
          <img src="/src/assets/Icon/Icon - Linkedin.png" class="w-8 h-8 md:w-10 md:h-10" alt="LinkedIn">
          <img src="/src/assets/Icon/Icon - X Twitter.png" class="w-8 h-8 md:w-10 md:h-10" alt="Twitter">
      </div>
-     <div class="flex justify-center">
-        <img src="/src/assets/images/Logo.svg" class="object-container    w-full mx-auto md:w-full  md:h-64" alt="Logo Rev">
+     <div class="md:flex  hidden justify-center">
+        <img src="/src/assets/images/Logo.svg" class="object-container    w-64 mx-auto md:w-full  md:h-64" alt="Logo Rev">
     </div>
      <!-- Image de profil -->
-     <div class="flex flex-col items-center gap-2">
+     <div class="flex flex-col items-center relative">
         <!-- Image de profil -->
-        <img src="/src/assets/images/img.jpg" 
-             class="h-14 w-14 md:h-18 md:w-18 shadow-2xl rounded-full object-cover border-4 border-[#54acae]" 
-             alt="Profile">
+        <div class="relative z-20">
+          <img src="/src/assets/images/img.jpg" 
+               class="h-14 w-14 md:h-18 md:w-18 shadow-2xl rounded-full object-cover border-4 border-gray-300" 
+               alt="Profile">
+        </div>
       
-        <!-- Bouton "Mon compte" -->
-        <a href="/login.html" 
-           class="bg-[#58abaf] text-white font-bold px-6 py-2 rounded-full shadow-md text-sm md:text-base hover:bg-[#499fa3] transition duration-300">
+        <!-- Bouton "Mon compte" juste en dessous -->
+        <a href="/login.html"
+           class="md:-mt-3 z-10 bg-[#58abaf] w-34 text-center text-white font-bold px-6 py-2 md:w-full rounded-full shadow-2xl text-[11px] md:text-base hover:bg-[#499fa3] transition duration-300">
            Mon compte
         </a>
       </div>
       
+      
 
      
 
- </div>
+ 
+    </div>
 
   <!-- Logo -->
- 
+   <div class="md:hidden   justify-center">
+        <img src="/src/assets/images/Logo.svg" class="object-container    w-auto  mx-auto md:h-64" alt="Logo Rev">
+    </div>
  </div>
- 
     <div class="  mx-2 md:mx-14 lg:mx-24 space-y-14">
      
-        <div class="space-y-8">
+        <div class=" space-y-4">
             <h1 class="font-medium text-6xl tracking-tight  text-[#772D80]">Hey <span
                     class="text-[#998dbe]">Prénom</span>, Quoi de neuf ?</h1>
                     <div class="grid grid-cols-1 md:mx-4  md:grid-cols-2 md:bg-white p-5 gap-4 md:space-x-9 md:shadow-xl rounded-4xl">
@@ -70,7 +75,8 @@
                                         bg-[#9dcdd0] md:bg-transparent ">
                                     <p class="text-white md:text-[#9dcdd0] font-bold text-sm md:text-xl text-center w-full">
                                         Depuis le début de votre abonnement</p>
-                                    <span class="md:hidden text-white text-xl flex-shrink-0">▼</span>
+                                        <span class="md:hidden text-white text-xl flex-shrink-0"><i class="fas fa-chevron-down text-[#9dcdd0] text-base p-1  bg-white rounded-full "></i></span>
+                                    
                                 </div>
                                 <ul class="flex flex-col space-y-1 md:p-0 p-4">
                                     <li class="flex items-center gap-x-2">
@@ -99,7 +105,8 @@
                                 <div class="bg-[#8475b5] md:bg-transparent p-1 md:rounded-xl flex items-center justify-between">
                                     <p class="text-white md:rounded-xl md:text-[#8475b5] font-bold text-sm md:text-xl text-center w-full">
                                         Depuis le début de votre abonnement</p>
-                                    <span class="md:hidden text-white text-xl flex-shrink-0">▼</span>
+                                        <span class="md:hidden text-white text-xl flex-shrink-0"><i class="fas fa-chevron-down text-[#8475b5] text-base p-1  bg-white rounded-full "></i></span>
+
                                 </div>
                                 <ul class="flex flex-col space-y-1 md:p-0 p-4">
                                     <li class="flex items-center gap-x-2">
@@ -135,29 +142,30 @@
                 <div class="flex justify-between w-full overflow-hidden">
                     <!-- Onglet 1 -->
                     <a href="/index.html"
-                        class="tab-button w-full  active-tab hover:bg-gray-300 flex gap-2 items-center transition duration-300 p-2">
+                        class="tab-button w-full shadow-md  active-tab hover:bg-gray-300 flex gap-2 items-center transition duration-300 p-2">
                         <img src="src/assets/Icon/Tendances RSE- Green.png" class="w-12 h-12" alt="">
-                        <p class="md:text-xl text-xs md:block font-medium whitespace-nowrap">Tendances RSE</p>
+                        <h1 class="md:text-xl hidden text-[#998dbe]  md:block font-medium">Tendances RSE</h1>
                         <div
-                            class="absolute inline-flex md:top-[39rem] top-[49rem]    md:left-[17rem] lg:top-[38rem] ] lg:left-[26rem] left-[7rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
+                            class="absolute inline-flex md:top-[39rem] top-[56rem]    md:left-[17rem] lg:top-[38rem] ] lg:left-[26rem] left-[7rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
                             +20</div>
                     </a>
             
                     <!-- Onglet 2 -->
                     <a href="/commercial.html"
-                        class="tab-button w-full active-tab flex gap-2 items-center p-2 hover:bg-gray-300 transition duration-300">
+                        class="tab-button w-full active-tab flex gap-2 items-center border-r  border-l border-gray-300 shadow-mdp-2 hover:bg-gray-300 transition duration-300">
                         <img src="src/assets/Icon/Idées commerciales - Purple.png" class="w-12 h-12" alt="">
-                        <p class="md:text-xl hidden md:block font-medium">Idées Commerciales</p>
+                        <h1 class="md:text-xl hidden text-[#998dbe]  md:block font-medium">Idées Commerciales</h1>
                         <div
-                            class="absolute inline-flex md:top-[39rem]   md:left-[32rem] top-[49rem] lg:top-[38rem] lg:left-[49rem] left-[16rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
+                            class="absolute inline-flex md:top-[39rem]   md:left-[32rem] top-[56rem] lg:top-[38rem] lg:left-[49rem] left-[14rem] items-center justify-center w-8 h-8 text-xs font-bold text-white bg-[#772D80] shadow-md rounded-full dark:border-gray-900">
                             +20</div>
                     </a>
             
                     <!-- Onglet 3 -->
                     <a href="/profil.html"
-                        class="tab-button w-full flex gap-2 items-center p-2 hover:bg-gray-300 transition duration-300">
+                        class="tab-button w-full flex text-[#998dbe]   items-center md:p-2 hover:bg-gray-300 transition duration-300">
                         <img src="src/assets/Icon/Profil - Green.png" class="w-12 h-12" alt="">
-                        <p class="text-xl md:block hidden font-medium">Compléter le Profil</p>
+                        <h1 class=" md:text-xl text-xs md:block font-medium 
+                        ">Compléter le Profil</h1>
                     </a>
                 </div>
             
@@ -165,18 +173,17 @@
             
 
         
+            <form action="">
         <div class="space-y-6 px-6 md:mx-24 py-4">
     <!-- Titre principal -->
     <div class="space-y-2">
       
         <h1 class="font-bold text-4xl text-[#772D80]">Mettre à jour mon profil</h1>
         <div class="space-y-8 mt-5">
-            <form action="">
                 <div class="space-y-1 flex flex-col">
                     <label>Nom de l'entreprise</label>
                     <input type="text" name="" id="" class="border-b-[#772D80] max-w-92  border-b outline-none">
                 </div>
-            </form>
 
             <div class="flex flex-col space-y-1 relative max-w-92">
                 <label for="search">Lieu d’implantation</label>
@@ -319,7 +326,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-6">
               
 
-                <div class="bg-[#9dcdd0] p-4 rounded-2xl space-y-3">
+                <div class="bg-[#f3f9f9] p-4 rounded-2xl space-y-3">
                     <div class="flex flex-col space-y-3 justify-center items-center ">
                       <div class="space-y-2 text-center flex gap-3 md:block ">
                         <h1 class="md:text-4xl text-[#54acae]">Plan Essentiel</h1>
@@ -339,7 +346,7 @@
                 
                 </div>
 
-                <div class="bg-[#9dcdd0] p-4 rounded-2xl space-y-3">
+                <div class="bg-[#f3eff7] p-4 rounded-2xl space-y-3">
                     <div class="flex flex-col space-y-3 justify-center items-center ">
                       <div class="space-y-2 text-center flex gap-3 md:block ">
                         <h1 class="md:text-4xl text-[#772D80] ">Plan Essentiel</h1>
@@ -366,9 +373,11 @@
         </div>
     </div>
 </div>
-<div class="absolute md:right-[36rem] right-[8rem] md:top-[98rem]">
-    <button href="" class="bg-[#8f59b7]  text-center text-white rounded-full p-2 px-2 shadow-md"><h1>Mettre a nouveux</h1></button>
+<div class="absolute md:right-[38rem] right-[9rem] md:top-[97rem]">
+    <button href="" class="bg-[#8f59b7]  text-center text-white rounded-full p-2 px-2 shadow-md"><h1>Mettre à jour</h1></button>
 </div>
+</form>
+
 
         </div>
     </div>
@@ -380,11 +389,11 @@
         <img src="/src/assets/Icon/Ecureuil.png"
             class="w-24 h-24 animate-bounce absolute right-10 -top-16 lg:right-20 lg:bottom-44 object-cover" alt="">
     
-        <div class="px-4 md:px-10 bg-[#e1e5be] ">
+        <div class="px-4 md:px-10 bg-[#e6e8d3] shadow-lg pt-4">
 
 
             
-            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-6 lg:space-y-0">
+            <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-6 lg:space-y-0 ">
     
                 <!-- Logo Section -->
 

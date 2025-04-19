@@ -24,10 +24,19 @@ html,body {
     font-style: normal;
   }
 
-
+.likn{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 
   .bg-image  {
     background-image: url("../images/bg.jpg");
+  }
+
+
+  .login-image  {
+    background-image: url("../images/bg2.jpg");
   }
 
 
@@ -60,9 +69,7 @@ html,body {
    background: white;
    text-decoration: none;
    box-shadow: 1px 1px 1px rgba(112, 112, 51, 0.068);
- 
-  
-    /* Exemple de styles pour le lien actif */
+  color:#58abaf;
 }
 
 
