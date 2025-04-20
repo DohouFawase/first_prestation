@@ -1,15 +1,19 @@
   // Exemple de code JavaScript pour ajouter la classe active-link
   const currentUrl = window.location.pathname;
+
   const links = document.querySelectorAll('.tab-button');
-
+  
+  
+  
   links.forEach(link => {
-      if (link.getAttribute('href') === '/index.html') {
-          link.classList.add('active-link');
-      } else if (link.href.includes(currentUrl) && currentUrl !== '/index.html') {
-          link.classList.add('active-link');
-      }
+  
+  if (link.href.includes(currentUrl)) {
+  
+  link.classList.add('active-link');
+  
+  }
+  
   });
-
 
 
 
