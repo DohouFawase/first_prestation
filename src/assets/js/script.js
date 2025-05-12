@@ -1,19 +1,32 @@
   // Exemple de code JavaScript pour ajouter la classe active-link
-  const currentUrl = window.location.pathname;
+//   const currentUrl = window.location.pathname;
 
-  const links = document.querySelectorAll('.tab-button');
+//   const links = document.querySelectorAll('.tab-button');
   
   
   
-  links.forEach(link => {
+//   links.forEach(link => {
   
-  if (link.href.includes(currentUrl)) {
+//   if (link.href.includes(currentUrl)) {
   
-  link.classList.add('active-link');
+//   link.classList.add('active-link');
   
+//   }
+  
+//   });
+
+
+const currentUrl = window.location.pathname;
+
+const links = document.querySelectorAll('.tab-button');
+
+links.forEach(link => {
+
+  // Use direct equality for comparison
+  if (link.href === window.location.origin + currentUrl) {
+    link.classList.add('active-link');
   }
-  
-  });
+});
 
 
 
@@ -61,3 +74,24 @@
         }
     });
 });
+
+
+
+
+
+
+
+
+
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+document.documentElement.classList.toggle(
+  "dark",
+  localStorage.theme === "dark" ||
+    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
+);
+// Whenever the user explicitly chooses light mode
+localStorage.theme = "light";
+// Whenever the user explicitly chooses dark mode
+localStorage.theme = "dark";
+// Whenever the user explicitly chooses to respect the OS preference
+localStorage.removeItem("theme");

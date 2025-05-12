@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/src/assets/css/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login</title>
    
 </head>
 <body>
-    <div class="bg-[#e8e4d4]">
+    <div class="bg-[#e8e4d4] dark:bg-[#201747]">
 
         <div class="mx-4 md:mx-12 pt-4 ">
             <div class="flex justify-between  gap-5">
@@ -40,7 +46,7 @@
           
             <!-- Bouton "Mon compte" juste en dessous -->
             <a href="/login.html"
-               class="md:-mt-3 z-10 bg-[#58abaf] w-34 text-center text-white font-bold px-6 py-2 md:w-full rounded-full shadow-2xl text-[11px] md:text-base hover:bg-[#499fa3] transition duration-300">
+               class="-mt-3 z-10 bg-[#58abaf] w-24 text-center text-white font-bold md:px-6 py-2 md:w-full rounded-full shadow-2xl text-[11px] md:text-base hover:bg-[#499fa3] transition duration-300">
                Mon compte
             </a>
           </div>
@@ -59,31 +65,31 @@
      </div>
 
 
-       <div class=" my-4 mx-4 py-3 md:mx-24 ">
-        <div class="shadow-2xl bg-white rounded-4xl overflow-hidden ">
-            <div class="grid grid-cols-1 md:grid-cols-2 place-content-center">
-                <div class="p-6 px-12 space-y-4">
-                    <h1 class="font-bold text-2xl">Se connecter</h1>
+       <div class=" mx-4 md:mx-24 ">
+        <div class="shadow-2xl bg-white dark:bg-[#201747]  rounded-4xl overflow-hidden ">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="p-6 md:px-20 space-y-4 ">
+                    <h1 class="font-medium text-[#772D80] text-4xl dark:text-white">Se connecter</h1>
                     <div class="">
                         <form action="">
-                         <div class="space-y-4">
+                         <div class="space-y-4 ">
                             <div class="flex flex-col">
-                                <label for="identify" class="font-medium text-lg">Idendifiant</label>
-                                <input type="text"  class=" border-b outline-none focus:border-b-[] p-3">
+                                <label for="identify" class="text-gray-500 dark:text-white text-md">Idendifiant</label>
+                                <input type="text"  class=" border-b border-[#7c75B8] outline-none focus:border-b-[] md:p-2">
                             </div>
     
                             <div class="flex flex-col">
-                                <label for="identify" class="font-medium text-lg">Mots de Passe</label>
-                                <input type="password"  class=" border-b outline-none focus:border-b-[] p-3">
+                                <label for="identify" class="text-gray-500 dark:text-white text-md">Mots de Passe</label>
+                                <input type="password"  class=" border-b border-[#7c75B8] outline-none focus:border-[#7c75B8] md:p-2">
                             </div>
     
-                            <div class="flex justify-center items-center">
-                                <button type="submit" class="bg-[#54acae] rounded-full p-2 px-4 text-white font-bold ">Connexion</button>
+                            <div class="flex justify-center items-center cdn">
+                                <button type="submit" class="bg-[#54acae] cursor-pointer rounded-full p-2 px-4 text-white font-bold shadow-lg likn ">Connexion</button>
                             </div>
                          </div>
     
-                        <div class=" flex justify-between items-center">
-                            <a href="#">Mots de Passe Oublié ?</a>
+                        <div class=" flex justify-between items-center mt-2">
+                            <a href="#" class="dark:text-white">Mots de Passe Oublié ?</a>
                             <a href="#" type="submit" class="bg-[#7c75B8] whitespace-nowrap  transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 rounded-full shadow-md hover:bg-transparent hover:text-black transition duration-1 p-2 px-2 text-white font-bold ">Cliquez-ici</a>
     
                         </div>
@@ -91,25 +97,25 @@
                     </div>
                 </div>
     
-                <div class="bg-image  bg-green-400 ">
-                    <div class="space-y-8 mt-5 p-6 px-4">
-                        <div class="border p-2 bg-gray-1/50 rounded-2xl px-3 bg-blur border-white ">
+                <div class="bg-image   flex flex-col justify-center items-center ">
+                    <div class="space-y-12 mt-5 p-6 px-14 w-full flex flex-col justify-center items-center ">
+                        <div class="border p-2 bg-white/50  w-72  rounded-full px-3 bg-blur border-white ">
     
-                           <p class="text-white text-lg font-bold">
-                            <i class="fa-brands fa-google"></i>
+                           <p class="text-white text-lg  flex items-center gap-2">
+                            <i class="fa-brands fa-google text-3xl"></i>
                             Continuer avec Google
                            </p>
                         </div>
-                        <div class="border p-2 bg-gray-1/50 rounded-2xl px-3 bg-blur border-white ">
-                            <p class="text-white text-lg font-bold">
-                                <i class="fa-brands fa-facebook-f"></i>
+                        <div class="border p-2 bg-white/50  w-72   rounded-full px-3 bg-blur border-white ">
+                            <p class="text-white text-lg  flex items-center gap-2">
+                                <i class="fa-brands fa-facebook-f text-3xl"></i>
                                 Continuer avec Facebook
                                </p>
     
                         </div>
-                        <div class="border p-2 bg-gray-1/50 rounded-2xl px-3 bg-blur border-white ">
-                            <p class="text-white text-lg font-bold">
-                                <i class="fa-brands fa-apple"></i>
+                        <div class="border p-2 bg-white/50 w-72  rounded-full px-3 bg-blur border-white ">
+                            <p class="text-white text-lg  flex items-center gap-2">
+                                <i class="fa-brands fa-apple text-3xl"></i>
                                 Continuer avec Apple
                                </p>
                         </div>
@@ -125,7 +131,7 @@
         <img src="/src/assets/Icon/Ecureuil.png"
             class="w-24 h-24 animate-bounce absolute right-10 -top-16 lg:right-20 lg:bottom-44 object-cover" alt="">
     
-        <div class="px-4 md:px-10 bg-[#e6e8d3] shadow-lg pt-4 ">
+        <div class="px-4 md:px-10 bg-[#e8e4d4] dark:bg-[#200039] shadow-lg pt-4 ">
 
 
             
@@ -139,14 +145,13 @@
                 </div>
     
                 <!-- Links Section -->
-                <div class="text-center lg:text-left">
-                    <ul class="space-y-3">
-                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Conditions générales d'utilisation</a></li>
-                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Politique de confidentialité</a></li>
-                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7]">Support clients</a></li>
+                <div class="text-center lg:text-left ">
+                    <ul class="space-y-3 dark:text-white">
+                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7] dark:text-white">Conditions générales d'utilisation</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7] dark:text-white">Politique de confidentialité</a></li>
+                        <li><a href="" class="text-gray-600 hover:text-[#61b5b7] dark:text-white">Support clients</a></li>
                     </ul>
                 </div>
-    
                 <!-- Contact Section -->
                 <div class="text-center lg:text-right">
                     <a href="#"

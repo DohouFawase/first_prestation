@@ -1,3 +1,5 @@
+
+
 html,body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -16,6 +18,13 @@ html,body {
       "GRAD" 0;
   }
 
+  .cdn {
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "GRAD" 0;
+  }
 
 
   h1 {
@@ -32,6 +41,8 @@ html,body {
 
   .bg-image  {
     background-image: url("../images/bg.jpg");
+    background-size: cover;
+    object-fit: cover;
   }
 
 
@@ -70,6 +81,13 @@ html,body {
    text-decoration: none;
    box-shadow: 1px 1px 1px rgba(112, 112, 51, 0.068);
   color:#58abaf;
+}
+
+
+.dark .active-link {
+  background:#271C54; /* gris foncé typique du dark mode */
+  color: #60f6ff; /* bleu clair ou cyan qui ressort bien sur fond foncé */
+  box-shadow: 4px 14px 3px rgba(236, 231, 231, 0.05);
 }
 
 
